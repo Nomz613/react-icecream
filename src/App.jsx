@@ -1,5 +1,7 @@
 import React from 'react'
+import IceCreamList from './IceCreamList';
 import IceCreamTitle from './IceCreamTitle';
+import IceCreamFlavor from './IceCreamFlavor';
 
 function App(){
     const icecream = {
@@ -16,7 +18,8 @@ function App(){
         ]
     };
     return(
-      <IceCreamTitle title = {icecream.title} feedback = {icecream.feedback}/>
+      <IceCreamTitle title = {icecream.title} feedback = {icecream.feedback}/>,
+      <IceCreamList flavors = {icecream.flavors}/>, <IceCreamFlavor favorite = {icecream.favorite}/>
     )
 }
 
