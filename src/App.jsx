@@ -18,8 +18,11 @@ function App(){
         ]
     };
     return(
+    <div>
       <IceCreamTitle title = {icecream.title} feedback = {icecream.feedback}/>,
-      <IceCreamList flavors = {icecream.flavors}/>, <IceCreamFlavor favorite = {icecream.favorite}/>
+      <IceCreamList flavors = {icecream.flavors}/>,
+      <IceCreamFlavor flavors = {icecream.flavors}/>
+    </div>
     )
 }
 
